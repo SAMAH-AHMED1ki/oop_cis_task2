@@ -1,0 +1,6 @@
+college : name , gpa , national id and major
+unique feature : gpa or department
+Gym : name , age , health condition
+unique feature : goal of gym
+Nursery : name , age , health condition
+unique feature : A person authorized tp recieve the kid
