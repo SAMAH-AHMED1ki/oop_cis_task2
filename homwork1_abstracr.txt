@@ -1,0 +1,4 @@
+work1:
+Encapsulation: room has bed , desk,cupboard, mirror and everthing in one place.
+Data hiding : money and jewellery are kept inside a safe, and no one cab access them except the owner.
+Abstraction : when you use a fan or a light switch you know how to use it without knowinh how it works internaly
