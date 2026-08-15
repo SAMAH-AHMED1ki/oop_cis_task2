@@ -4,23 +4,36 @@ using namespace std;
 #include <iostream>
 #include <algorithm>
 #include<string>
-
+class type {
+private:
+    string a;
+public:
+    type(string a_) : a(a_) {
+       
+        cout << a;
+    }
+    ~type() {
+        cout << a;
+    }
+};
 class LuckyNum {
 private:
-    int a;
-    int b;
-    int c;
+    type a;
+    type b;
+    type c;
 public:
-    LuckyNum(int a,int b,int c): b(b) , a(a) , c(c)
-    {
-        cout << a << b << c;
+    LuckyNum(type a,type b, type c) : b(b), a(a),c(c) {
+        
     }
 };
 
 int main()
 
 {
-    LuckyNum s(2,4,6);
-    
+    string x = "first";
+    string y = "second";
+    string z = "third";
+    LuckyNum s(x, y, z);
 }
-// he will use class order
+// constructor بيهيئ حسب ترتيب المتغيرات ف الكلاس وليس حسب ترتيبهم ف ال intializer list
+// destructor بيدمرهم بترتيب العكس 
