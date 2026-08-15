@@ -1,0 +1,3 @@
+1: الطرق الممكنه لانهاء كلاس سي intializer list لوجود ال const , refernce
+2:  class A هتتنادي مرتين مره defualt , this->aa= classA()
+3: tip : use intializer list بدل التعيين جوا ال constructor(efficiency)
