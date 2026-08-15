@@ -1,0 +1,3 @@
+1: constructor is private fix: make it public
+tip : لازم تتاكد ان ال constructor بابليك علشان نقدر نعمل اوبجيكت خارج الكلاس
+2: ااستخدام نفس اسم المتغير المحلي بيغطي علي عضو الكلاس الاساسي someFun 
