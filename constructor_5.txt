@@ -1,0 +1,6 @@
+code clarity : settime كل assignment يبقي ف سطر لوحده لسهولة القراءة 
+Code duplication : constructor و SetTime() عندهم نفس مسؤولية تعيين قيم الوقت.
+وPrintHHMMSS() و ToString() عندهم تكرار في تكوين شكل الوقت
+Missing input validation: ممكن اليوزر يدخل قيم غير منطقيه للثواني والدقايق والساعات مثلا الدقايق اقصي قيمع 60 دقيقه
+Bug:
+الـ getters لازم ترجع القيم المخزنة؛ لو جسم الـ getter فاضي فهي لا ترجع قيمة رغم إن نوع الإرجاع int
