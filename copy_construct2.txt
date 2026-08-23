@@ -1,0 +1,3 @@
+عشان في السطر 31 عملنا Assignment وعملت Shallow Copy فخلى الاتنين Objects يشاوروا على نفس المكان في الـ Heap.
+
+فلما الـ Destructor يشتغل ويمسح المكان ده هيحصل Crash، فالدكتور عمله comment مؤقتاً لحد ما نعمل Deep Copy.
