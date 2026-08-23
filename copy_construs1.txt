@@ -1,0 +1,15 @@
+1) What happens if we moved a constructor to the private section?
+
+مش هنعرف نعمل Objects جديدة من بره الكلاس (زي في الـ main) بالطريقة العادية، لأن الكونستركتور هيبقى مقفول وغير متاح (Inaccessible)، وهيطلع Compile Error.
+
+2) What happens if we moved the copy constructor to the private section?
+
+الكائنات العادية هتتعمل عادي، بس مش هنعرف نعمل Copy للأوبجكتس خالص من بره الكلاس (مثلًا MyNumber c = b; أو نبعتها بـ Value)، لأن الكوبي كونستركتور هيكون مقفول.
+
+3) C++ won't allow you to not use the &, Why? What kind of behaviour will happen?
+
+لو شلنا علامة الـ &، الـ parameter هيتاخد بـ Pass by Value. ولما نيجي نعمل كوبي، الكومبايلر هيحتاج يعمل نسخة للأوبجكت الأول فيدخل في Infinite Recursion (لوب لا نهائية) وتعمل Stack Overflow وتضرب، فالـ & ضرورية عشان ناخد الأصل مباشرة من غير نسخ مكرر.
+
+4) C++ doesn't force you to use const. Why is it a good practice to use it?
+
+لأنها بتدي Safety وبتحمي الأوبجكت الأصلي (another) من أي تعديل بالغلط جوه الكونستركتور، وكمان بتخلينا نقدر نعمل Copy للكائنات المؤقتة (Temporary Objects) اللي راجعة من الدوال، لأن الـ Reference العادي بيرفضها.
